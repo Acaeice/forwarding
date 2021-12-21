@@ -1,0 +1,27 @@
+basePath: /api
+info:
+  contact: {}
+  title: API
+  version: "1.0"
+paths:
+  /index:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: name
+        in: query
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: result
+          schema:
+            type: string
+      summary: Some DESC
+      tags:
+      - sample
+swagger: "2.0"
