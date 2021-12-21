@@ -18,6 +18,6 @@ func getMsg(c *gin.Context) {
 	go nsq.MessageForward(&param)
 
 	ok(c, resp{
-		"msg": param,
+		"msg": "发送成功!",
 	})
 }
